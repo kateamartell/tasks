@@ -23,7 +23,7 @@ function App(): React.JSX.Element {
                 <li>Second element</li>
                 <li>Third element</li>
             </ul>
-            <Button onClick={() => console.log("I am logged")}>
+            <Button onClick={() => console.log("Hello World!")}>
                 Log Hello World
             </Button>
             <div>
