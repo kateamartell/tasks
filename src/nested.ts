@@ -69,7 +69,7 @@ export function makeAnswers(questions: Question[]): Answer[] {
  * Hint: as usual, do not modify the input questions array
  */
 export function publishAll(questions: Question[]): Question[] {
-    return [];
+    return questions.map((q: Question): Question => ({...q, published: true}));
 }
 
 /***
