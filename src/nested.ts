@@ -84,7 +84,8 @@ export function addNewQuestion(
     name: string,
     type: QuestionType
 ): Question[] {
-    return [];
+    const {makeBlankQuestion} = require("./objects");
+    return [...questions, makeBlankQuestion(id, name, type)];
 }
 
 /***
