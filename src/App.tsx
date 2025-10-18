@@ -15,6 +15,11 @@ function App(): React.JSX.Element {
             </header>
 
             
+            <p>
+                hello world
+                Edit <code>src/App.tsx</code> and save. This page will
+                automatically reload.
+            </p>
             <img src="images/clover.png" alt="A picture of my dog clover" />
 
             <div style={{ backgroundColor: "red", padding: "10px" }}>
