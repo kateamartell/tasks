@@ -1,9 +1,10 @@
 import React from "react";
+import { Button, Container, Row, Col } from "react-bootstrap";
 import "./App.css";
-import { ChangeType } from "./components/ChangeType";
+import { Counter } from "./components/Counter";
 import { RevealAnswer } from "./components/RevealAnswer";
 import { TwoDice } from "./components/TwoDice";
-import { Counter } from "./components/Counter";
+import { ChangeType } from "./components/ChangeType";
 
 function App(): React.JSX.Element {
     return (
@@ -12,14 +13,46 @@ function App(): React.JSX.Element {
                 UM COS420 with React Hooks and TypeScript
                 <h1>Hello World</h1>
             </header>
-            <hr></hr>
-            <Counter></Counter>
+
+            
+            <img src="images/clover.png" alt="A picture of my dog clover" />
+
+            <div style={{ backgroundColor: "red", padding: "10px" }}>
+                This div has a red background.
+            </div>
+
+            <p>
+                This is <span style={{ color: "blue" }}>colored text</span>.
+            </p>
+
+            <ul>
+                <li>First item</li>
+                <li>Second item</li>
+                <li>Third item</li>
+            </ul>
+
+            
+            <Button onClick={() => console.log("Hello World!")}>
+                Log Hello World
+            </Button>
+
+            
+            <Container>
+                <Row>
+                    <Col>Column 1</Col>
+                    <Col>Column 2</Col>
+                </Row>
+            </Container>
+
+            
             <hr />
-            <RevealAnswer></RevealAnswer>
+            <Counter />
             <hr />
-            <TwoDice></TwoDice>
+            <RevealAnswer />
             <hr />
-            <ChangeType></ChangeType>
+            <TwoDice />
+            <hr />
+            <ChangeType />
         </div>
     );
 }
