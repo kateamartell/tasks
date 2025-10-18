@@ -1,6 +1,10 @@
 import React from "react";
+import { Button, Container, Row, Col } from "react-bootstrap";
 import "./App.css";
-import { Button, Col, Container, Row } from "react-bootstrap";
+import { Counter } from "./components/Counter";
+import { RevealAnswer } from "./components/RevealAnswer";
+import { TwoDice } from "./components/TwoDice";
+import { ChangeType } from "./components/ChangeType";
 
 function App(): React.JSX.Element {
     return (
@@ -9,32 +13,51 @@ function App(): React.JSX.Element {
                 UM COS420 with React Hooks and TypeScript
                 <h1>Hello World</h1>
             </header>
+
+            
             <p>
                 hello world
                 Edit <code>src/App.tsx</code> and save. This page will
                 automatically reload.
             </p>
             <img src="images/clover.png" alt="A picture of my dog clover" />
-            This is <span style={{ color: "red" }}>colored text</span>.
-            <div style={{ backgroundColor: "red", padding: "4px" }}>
-                This will be red.
+
+            <div style={{ backgroundColor: "red", padding: "10px" }}>
+                This div has a red background.
             </div>
+
+            <p>
+                This is <span style={{ color: "blue" }}>colored text</span>.
+            </p>
+
             <ul>
-                <li>First element</li>
-                <li>Second element</li>
-                <li>Third element</li>
+                <li>First item</li>
+                <li>Second item</li>
+                <li>Third item</li>
             </ul>
+
+            
             <Button onClick={() => console.log("Hello World!")}>
                 Log Hello World
             </Button>
-            <div>
-                <Container>
-                    <Row>
-                        <Col>First column.</Col>
-                        <Col>Second column. Hello</Col>
-                    </Row>
-                </Container>
-            </div>
+
+            
+            <Container>
+                <Row>
+                    <Col>Column 1</Col>
+                    <Col>Column 2</Col>
+                </Row>
+            </Container>
+
+            
+            <hr />
+            <Counter />
+            <hr />
+            <RevealAnswer />
+            <hr />
+            <TwoDice />
+            <hr />
+            <ChangeType />
         </div>
     );
 }
