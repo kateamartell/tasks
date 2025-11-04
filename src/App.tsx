@@ -5,6 +5,9 @@ import { Counter } from "./components/Counter";
 import { RevealAnswer } from "./components/RevealAnswer";
 import { TwoDice } from "./components/TwoDice";
 import { ChangeType } from "./components/ChangeType";
+import { DoubleHalf } from "./bad-components/DoubleHalf";
+import { ColoredBox } from "./bad-components/ColoredBox";
+import { ChooseTeam } from "./bad-components/ChooseTeam";
 
 function App(): React.JSX.Element {
     return (
@@ -45,8 +48,14 @@ function App(): React.JSX.Element {
             </Container>
 
             
-            <hr />
-            <Counter />
+            <hr></hr>
+            <DoubleHalf></DoubleHalf>
+            <hr></hr>
+            <ChooseTeam></ChooseTeam>
+            <hr></hr>
+            <ColoredBox></ColoredBox>
+            <hr></hr>
+            <Counter></Counter>
             <hr />
             <RevealAnswer />
             <hr />
